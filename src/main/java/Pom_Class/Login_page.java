@@ -30,12 +30,24 @@ public class Login_page extends utilclass1 {
 	
 	public void emailID() throws IOException
 	{
-		emailid.sendKeys(getConfigData("email"));
+		try 
+		{
+			emailid.wait(1000);
+			emailid.click();
+			emailid.sendKeys(getConfigData("rohitrsb024@gmail.com"));
+		} 
+		catch (InterruptedException e) 
+		{
+			emailid.click();
+			emailid.sendKeys(getConfigData("rohitrsb024@gmail.com"));
+		}
+//		emailid.click();
+//		emailid.sendKeys(getConfigData("rohitrsb024@gmail.com"));
 	}
 	
 	public void password() throws IOException
 	{
-		password.sendKeys(getConfigData("password"));
+		password.sendKeys(getConfigData("rohit@2442"));
 	}
 	
 	public void button()

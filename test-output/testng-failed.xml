@@ -7,25 +7,6 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Test_Class.Usercangetlowestpriceproduct">
-        <methods>
-          <include name="verifythatusercangetlowestprice"/>
-          <include name="afterclass"/>
-          <include name="beforeMethod"/>
-          <include name="beforeclass"/>
-          <include name="aftermethod"/>
-        </methods>
-      </class> <!-- Test_Class.Usercangetlowestpriceproduct -->
-      <class name="Test_Class.Verfifyusercanaddnewadd">
-        <methods>
-          <include name="beforeclass"/>
-          <include name="afterclass"/>
-          <include name="AddnewAddress"/>
-          <include name="userlandonprofile"/>
-          <include name="beforeMethod"/>
-          <include name="aftermetyhod"/>
-        </methods>
-      </class> <!-- Test_Class.Verfifyusercanaddnewadd -->
       <class name="Test_Class.Verifyusercanlogin">
         <methods>
           <include name="afterclass"/>
@@ -35,6 +16,25 @@
           <include name="beforemethod"/>
         </methods>
       </class> <!-- Test_Class.Verifyusercanlogin -->
+      <class name="Test_Class.Verfifyusercanaddnewadd">
+        <methods>
+          <include name="beforeclass"/>
+          <include name="afterclass"/>
+          <include name="AddnewAddress" invocation-numbers="0 1"/>
+          <include name="userlandonprofile"/>
+          <include name="beforeMethod"/>
+          <include name="aftermetyhod"/>
+        </methods>
+      </class> <!-- Test_Class.Verfifyusercanaddnewadd -->
+      <class name="Test_Class.Usercangetlowestpriceproduct">
+        <methods>
+          <include name="verifythatusercangetlowestprice"/>
+          <include name="afterclass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeclass"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- Test_Class.Usercangetlowestpriceproduct -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
